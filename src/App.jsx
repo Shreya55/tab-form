@@ -2,6 +2,7 @@ import TabForm from './tabFormComponents/TabForm'
 import MemoizedTabComponent from './tabFormComponents/memoizedTabComponent/MemoizedTabComponent'
 import ProgressBar from './progressBarComponents/ProgressBar'
 import Pagination from './paginationComponents/Pagination'
+import MemoizedPagination from './paginationComponents/memoizedPaginationComponent/MemoizedPagination'
 import AutocompleteSearchBar from './autocompleteSearchBar/AutocompleteSearchBar'
 import Chips from './chipsInput/chips'
 import OtpInput from './otpInput/OtpInput'
@@ -19,9 +20,9 @@ function App() {
   const component = import.meta.env.VITE_COMPONENT;
   console.log(component)
   if (component === 'memoized') {
-    return <MemoizedTabComponent />;
+    return <MemoizedPagination />;
   }
-  return <TabForm />;
+  return <Pagination />;
 }
 
 export default App
