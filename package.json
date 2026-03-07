@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:regular": "vite --port 5173",
+    "dev:memoized": "VITE_COMPONENT=memoized vite --port 5174",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

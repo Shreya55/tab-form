@@ -1,4 +1,5 @@
 import TabForm from './tabFormComponents/TabForm'
+import MemoizedTabComponent from './tabFormComponents/memoizedTabComponent/MemoizedTabComponent'
 import ProgressBar from './progressBarComponents/ProgressBar'
 import Pagination from './paginationComponents/Pagination'
 import AutocompleteSearchBar from './autocompleteSearchBar/AutocompleteSearchBar'
@@ -12,15 +13,15 @@ import Todo from './todo/Todo'
 import StarRating from './starRating/StarRating'
 import PasswordGenerator from './passwordGenerator/PasswordGenerator'
 import Stopwatch from './stopwatch/Stopwatch'
-import Wordle from './wordle/Wordle'
 import Timer from './timerLoveBabbar/Timer'
 
 function App() {
-  return (
-    <>
-      <Timer />
-    </>
-  )
+  const component = import.meta.env.VITE_COMPONENT;
+  console.log(component)
+  if (component === 'memoized') {
+    return <MemoizedTabComponent />;
+  }
+  return <TabForm />;
 }
 
 export default App

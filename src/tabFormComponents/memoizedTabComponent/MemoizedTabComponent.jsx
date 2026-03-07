@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useCallback } from 'react';
-import './TabForm.css'; // Assuming shared CSS; adjust if needed
+import '../TabForm.css'; // Assuming shared CSS; adjust if needed
 
 // Import memoized child components for better performance
 import MemoizedProfile from './MemoizedProfile';
