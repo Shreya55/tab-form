@@ -1,0 +1,70 @@
+[
+    {
+        "name": "Fruits",
+        "id": 1,
+        "children": [
+            {
+                "name" : "Apple",
+                "id": 2
+            }, 
+            {
+                "name": "Grapes",
+                "id": 3
+            }
+        ]
+    },
+    {
+        "name": "Clothes",
+        "id": 4,
+        "children": [
+            {
+                "name": "jeans",
+                "id": 5,
+                "children": [
+                    {
+                        "name": "Levis",
+                        "id": 6
+                    },
+                    {
+                        "name": "wrangler",
+                        "id": 7
+                    },
+                    {
+                        "name": "calvinKlien",
+                        "id": 8,
+                        "children":[
+                            {
+                                "name": "hasPockets",
+                                "id": 14
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "vegetables",
+        "id": 9,
+        "children": [
+            {
+                "name": "potato",
+                "id": 10
+            },
+            {
+                "name": "brinjal",
+                "id": 11,
+                "children": [
+                    {
+                        "name": "smallBrinjal",
+                        "id": 12
+                    },
+                    {
+                        "name": "largeBrinjal",
+                        "id": 13
+                    }
+                ]
+            }
+        ]
+    }
+]

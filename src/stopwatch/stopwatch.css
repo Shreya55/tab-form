@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.stopwatch{
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+.buttons{
+    margin-top: 65px;
+    cursor: pointer;
+}
+.time{
+    font-size: xx-large;
+}
+.buttons button:first-child {
+    background-color: rgb(255, 113, 113);
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.buttons button:nth-child(2) {
+    background-color: rgb(109, 239, 109);
+    margin-right: 8px;
+    cursor: pointer;
+}
+.buttons button:nth-child(3) {
+    background-color: rgb(103, 103, 247);
+    cursor: pointer;
+}

@@ -1,0 +1,58 @@
+[
+    {
+        "name": "public",
+        "id" : "1",
+        "isFolder": true,
+        "children" : [
+            {
+                "name" : "index",
+                "id": "2",
+                "isFolder": false
+            }
+        ]
+    },
+    {
+        "name" : "src",
+        "id" : "3",
+        "isFolder": true,
+        "children" : [
+            {
+                "name": "accordion",
+                "id": "4",
+                "isFolder": false
+            },
+            {
+                "name" : "autocomplete",
+                "id": "5",
+                "isFolder": false
+            },
+            {
+                "name": "fileExplorer",
+                "id": 6,
+                "isFolder": true,
+                "children": [
+                    {
+                        "name": "data2.json",
+                        "id": "7",
+                        "isFolder" : false
+                    },
+                    {
+                        "name": "fileExplorer.css",
+                        "id": "8",
+                        "isFolder": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "App.jsx",
+        "id":"9",
+        "isFolder":false
+    },
+    {
+        "name": "main.jsx",
+        "id": "10",
+        "isFolder":false
+    }
+]

@@ -1,0 +1,15 @@
+.todo-container{
+    text-align: center;
+}
+
+.todo-list{
+    list-style-position: inside;
+}
+
+.btn{
+    margin-left: 20px;
+}
+
+.strikethrough{
+    text-decoration: line-through;
+}

@@ -1,0 +1,31 @@
+.main-div{
+    text-align:  center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-box{
+    width: 500px
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 500px;
+    border: 1px solid black;
+    width: 500px;
+    margin: auto;
+    padding: 3px;
+}
+
+#item-span{
+    padding: 10px;
+    cursor: pointer;
+}
+
+#item-span:hover{
+    background-color: #f0f0f0;
+}

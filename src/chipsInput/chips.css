@@ -1,0 +1,10 @@
+.main-box{
+    display: flex;
+    padding: 5px;
+}
+
+.chip{
+    padding: 5px;
+    background-color: rgb(219, 219, 219);
+    margin-right: 10px;
+}

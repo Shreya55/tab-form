@@ -1,0 +1,11 @@
+.inner{
+    background-color: rgb(15, 192, 133);
+    text-align: center;
+    transition: ease 0.25s;
+}
+
+.outer{
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}

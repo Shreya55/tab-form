@@ -1,0 +1,16 @@
+.accordion-container{
+    border: 1px solid black;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.accordion-title{
+    background-color: #cfcccc;
+    cursor: pointer;
+}
+
+#symbol{
+    float: right;
+    margin-right: 10px;
+}
