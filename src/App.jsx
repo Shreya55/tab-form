@@ -5,6 +5,7 @@ import Pagination from './paginationComponents/Pagination'
 import MemoizedPagination from './paginationComponents/memoizedPaginationComponent/MemoizedPagination'
 import AutocompleteSearchBar from './autocompleteSearchBar/AutocompleteSearchBar'
 import Chips from './chipsInput/chips'
+import MemoizedChips from './chipsInput/memoizedChipsComponent/MemoizedChips'
 import OtpInput from './otpInput/OtpInput'
 import Shimmer from './shimmer/Shimmer'
 import { Accordion } from './accordion/Accordion'
@@ -20,9 +21,9 @@ function App() {
   const component = import.meta.env.VITE_COMPONENT;
   console.log(component)
   if (component === 'memoized') {
-    return <MemoizedPagination />;
+    return <MemoizedChips />;
   }
-  return <Pagination />;
+  return <Chips />;
 }
 
 export default App
