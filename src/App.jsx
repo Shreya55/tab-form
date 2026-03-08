@@ -8,7 +8,7 @@ import Chips from './chipsInput/chips'
 import MemoizedChips from './chipsInput/memoizedChipsComponent/MemoizedChips'
 import OtpInput from './otpInput/OtpInput'
 import Shimmer from './shimmer/Shimmer'
-import { Accordion } from './accordion/Accordion'
+import Accordion from './accordion/Accordion'
 import FileExplorers from './fileExplorer/FileExplorers'
 import NestedCheckboxes from './nestedCheckboxes/NestedCheckboxes'
 import Todo from './todo/Todo'
@@ -25,7 +25,7 @@ function App() {
   if (component === 'memoized') {
     return <MemoizedProgressBar progress={-70}/>;
   }
-  return <ProgressBar progress={90}/>;
+  return <Accordion/>;
 }
 
 export default App

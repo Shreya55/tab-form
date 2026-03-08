@@ -1,41 +1,43 @@
-// ask -> where will I get data from
+import { useState } from "react";
+import "./accordion.css";
 
-import { useState } from 'react'
-import AccordionItem from './AccordionItem'
-import './accordion.css'
+export default function Accordion() {
+  const data = [
+    {
+      title: "React",
+      desc: "React is cool",
+    },
+    {
+      title: "Java",
+      desc: "Java is very old",
+    },
+    {
+      title: "Assembly",
+      desc: "For writing a code in Assembly you must invent the world first",
+    },
+    {
+      title: "CSS",
+      desc: "I still don't know how to centre a div",
+    },
+  ];
 
-export const Accordion = () => {
+  const [isOpen, setIsOpen] = useState(null);
 
-    const data = [
-        {
-            title: 'Accordion 1',
-            desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum`
-        },
-        {
-            title: 'Accordion 2',
-            desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum`
-        },
-        {
-            title: 'Accordion 3',
-            desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum`
-        }
-    ]
-
-    const [openIndex, setOpenIndex] = useState(0); //currently first element is expanded
-    console.log(openIndex)
+  function handleChange(index) {
+    setIsOpen(isOpen === index ? null : index);
+  }
 
   return (
-    <div>
-        {data.map((item, index) => 
-        <AccordionItem 
-        key={index}
-        title={item.title} 
-        desc={item.desc}
-        isOpen={index === openIndex ? true : false}
-        setIsOpen={() => {
-            index === openIndex ? setOpenIndex(null) : setOpenIndex(index);
-        }}
-        />)}
+    <div className="container">
+      <h1>Accordions</h1>
+      {data.map((d, index) => (
+        <div>
+          <div className="title-container" onClick={() => handleChange(index)}>
+            {d.title}
+          </div>
+          {isOpen === index && <div className="p-container">{d.desc}</div>}
+        </div>
+      ))}
     </div>
-  )
+  );
 }
