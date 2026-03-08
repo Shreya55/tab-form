@@ -14,9 +14,9 @@ export default function ProgressBar({progress}) {
 
   return (
     <div className='outer'>
-        <div className="inner" style={{width: `${animatedProgress}`}}
+        <div className="inner" style={{transform : `translateX(${animatedProgress-100}%)`}}
             role='progressbar' aria-valuenow={progress} aria-valuemin='0' aria-valuemax='100'>
-            {animatedProgress}
+            {progress} %
         </div>
     </div>
   )

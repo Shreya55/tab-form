@@ -9,7 +9,7 @@ export default function OtpInput() {
 
     const NUMBER_OF_DIGITS = 5
     const[inputArr, setInputArr] = useState(new Array(NUMBER_OF_DIGITS).fill(''))
-    const inputRef = useRef([]) // for focusing on elements, we need a reference to the input array --> {current: []}
+    const inputRef = useRef([]) // for focusing on elements, we need a reference to the input array --> {current: [e1, e2, e3, e4, e5]}
 
     useEffect(() => {
         inputRef.current[0]?.focus()

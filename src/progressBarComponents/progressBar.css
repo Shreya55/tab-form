@@ -1,7 +1,8 @@
 .inner{
-    background-color: rgb(15, 192, 133);
+    background-color: green;
     text-align: center;
     transition: ease 0.25s;
+    color: white;
 }
 
 .outer{

@@ -16,14 +16,16 @@ import StarRating from './starRating/StarRating'
 import PasswordGenerator from './passwordGenerator/PasswordGenerator'
 import Stopwatch from './stopwatch/Stopwatch'
 import Timer from './timerLoveBabbar/Timer'
+import MemoizedProgressBar from './progressBarComponents/memoizedProgressBarComponent/MemoizedProgressBar'
+import ProgressBarInput from './progressBarComponents/progressBarWithInput/ProgressBarInput'
 
 function App() {
   const component = import.meta.env.VITE_COMPONENT;
   console.log(component)
   if (component === 'memoized') {
-    return <MemoizedChips />;
+    return <MemoizedProgressBar progress={-70}/>;
   }
-  return <Chips />;
+  return <ProgressBar progress={90}/>;
 }
 
 export default App
